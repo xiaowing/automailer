@@ -17,7 +17,7 @@ $> python automailer -i configfile -f mailtxt [-a attachment] [-r | --respective
 ## Config File Format ##
 由于该工具的配置文件选择了ini格式，因此对于内容和形式上有所限制。一个模板如下：
 
-···
+```
 [sender]
 smtp = smtp.xxx.com
 user = xiaowing
@@ -31,7 +31,7 @@ ccc@yahoo.com = Hermione Granger
 
 [mailtext]
 subject = A test mail for you!
-···
+```
 
 * sender段 : 配置送信者的SMTP认证信息等
 * receiver段 : 配置收件人一览。这里需要将邮件地址作为key，收件人姓名作为value。因为有可能会有重名
